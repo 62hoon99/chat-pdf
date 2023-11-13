@@ -19,7 +19,7 @@ st.write("---")
 import pandas as pd
 from io import StringIO
 
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.file_uploader("PDF 파일을 올려주세요", type=['pdf'])
 st.write("---")
 
 def pdf_to_document(uploaded_file):
